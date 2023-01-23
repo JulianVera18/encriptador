@@ -15,6 +15,7 @@ function botonDesencriptar(){
 
 function botonLimpiar(){
     textArea.value = "";
+    textAreaOutput.value = "";
 }
 
 function generarAleatorio(){
