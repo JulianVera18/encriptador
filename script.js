@@ -1,6 +1,7 @@
 const textArea = document.querySelector(".textarea-input");
 const textAreaOutput = document.querySelector(".textarea-output");
 
+
 function botonEncriptar(){
     const textoEncriptado = encriptar(textArea.value);
     textAreaOutput.value = textoEncriptado;
@@ -18,15 +19,12 @@ function botonLimpiar(){
     textAreaOutput.value = "";
 }
 
-function generarAleatorio(){
-    aleatorio = Math.floor((Math.random()*2)+1);
-    return aleatorio;
-}
+
+var indiceAleatorio = Math.floor((Math.random()*2)+1);
 
 function encriptar(stringEncriptada){
     let matrizEncriptado = [["e","enter", "tener"],["i","imes", "meis"],["a", "ai", "pf"],["o","ober", "breo"],["u","ufat", "tafu"]];
     stringEncriptada = stringEncriptada.toLowerCase()
-    var indiceAleatorio = generarAleatorio();
     for(let i=0;i< matrizEncriptado.length; i++){
         if(stringEncriptada.includes(matrizEncriptado[i][0])){
             stringEncriptada = stringEncriptada.replaceAll(matrizEncriptado[i][0], matrizEncriptado[i][indiceAleatorio]);
@@ -37,8 +35,7 @@ function encriptar(stringEncriptada){
 
 function desencriptar(stringDesencriptada){
     let matrizEncriptado = [["e","enter", "tener"],["i","imes", "meis"],["a", "ai", "pf"],["o","ober", "breo"],["u","ufat", "tafu"]];
-    stringDesencriptada = stringDesencriptada.toLowerCase()
-    var indiceAleatorio = generarAleatorio();
+    stringDesencriptada = stringDesencriptada.toLowerCase();
     for(let i=0;i< matrizEncriptado.length; i++){
         if(stringDesencriptada.includes(matrizEncriptado[i][1]) || stringDesencriptada.includes(matrizEncriptado[i][2])){
             stringDesencriptada = stringDesencriptada.replaceAll(matrizEncriptado[i][indiceAleatorio], matrizEncriptado[i][0]);
