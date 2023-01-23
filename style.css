@@ -1,0 +1,111 @@
+*{
+    background: #E5E5E5;
+    font-family: 'Inter';
+    font-weight:100;
+    font-size: 26px;
+    line-height: 150%;
+}
+
+.logo{
+    padding-top: 15px;
+    margin-left: 50px;
+    width: 3%;
+}
+
+main{
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 80px;
+}
+
+.textarea-input{
+    border: none;
+    color: rgb(137, 117, 212);
+    margin-top: 50px;
+    text-transform: lowercase;
+}
+::placeholder{ color:rgb(137, 117, 212);}
+    .textarea-input:focus{
+        outline: none;
+    }
+
+.textarea-output{
+    background: rgb(255, 255, 255);
+    background-image: url("Imagenes/Muñeco.svg");
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 20px;
+    color:rgb(137, 117, 212);
+    margin-left: 100px;
+    margin-top: 50px;
+    padding-left: 20px;
+    position: fixed;
+}
+.mensaje:focus{
+    outline: none;
+}
+
+.botones{
+    display: inline-block;
+    margin-top: 18px;
+
+}
+
+.boton-encriptar{
+    background-color: rgb(137, 117, 212);
+    border: 1px solid rgb(87, 74, 134);
+    border-radius: 20px;
+    color: rgb(219, 209, 250);
+    cursor: pointer;
+    height: 60px;
+    width: 310px;
+}
+
+.boton-desencriptar{
+    background-color: rgb(199, 186, 243);
+    border: 1px solid rgb(87, 74, 134);
+    border-radius: 20px;
+    color: rgb(87, 74, 134);
+    cursor: pointer;
+    height: 60px;
+    width: 310px;
+}
+
+.boton-limpiar{
+    background-color: rgb(103, 92, 141);
+    border: 1px solid rgb(87, 74, 134);
+    border-radius: 20px;
+    color: rgb(219, 209, 250);
+    cursor: pointer;
+    height: 60px;
+    width: 120px;
+}
+
+.boton-copy{
+    background-color: rgb(199, 186, 243);
+    border: 1px solid rgb(87, 74, 134);
+    border-radius: 20px;
+    color: rgb(87, 74, 134);
+    cursor: pointer;
+    height: 60px;
+    margin-top: 375px;
+    margin-left: 115px;
+    position: absolute;
+    width: 308px;
+    position: fixed;
+}
+
+.informacion{
+    font-size: 16px;
+    color: rgb(87, 74, 134);
+}
+
+footer{
+    text-align: center;
+    padding: 40px;
+}
+
+.copyright{
+    font-size: 13px;
+    margin: 20px;
+}
